@@ -1,13 +1,15 @@
 export default function List({ travelItems }) {
   return (
-    <div>
-      <ul>
-        {travelItems.map((item, index) => (
-          <li key={index}>
+    <div className="container">
+      {travelItems.map((item, index) => (
+        <div className="item">
+          <input type="checkbox" />
+          <h3 key={index}>
             {item.itemNum} x {item.item}
-          </li>
-        ))}
-      </ul>
+          </h3>
+          <button>x</button>
+        </div>
+      ))}
     </div>
   );
 }

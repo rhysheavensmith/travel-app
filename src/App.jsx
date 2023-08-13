@@ -3,6 +3,7 @@ import Header from "./Header";
 import Form from "./Form";
 import List from "./List";
 import Stats from "./Stats";
+import "./App.css";
 
 export default function App() {
   // create state for the form items
@@ -13,7 +14,7 @@ export default function App() {
   // function to add item object to the travel items array
   const addItem = (event) => {
     event.preventDefault();
-    setTravelItems([...travelItems, { item, itemNum }]);
+    item.length > 0 && setTravelItems([...travelItems, { item, itemNum }]);
     setItem("");
     setItemNum(1);
   };
