@@ -6,7 +6,7 @@ export default function Form({
   itemNum,
 }) {
   return (
-    <div>
+    <div className="packing-form">
       <h2>What do you need to pack?</h2>
       <form>
         <select
